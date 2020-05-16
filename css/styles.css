@@ -11,13 +11,13 @@
   );
   --youtube: hsl(348, 97%, 39%);
 
-  /* Switch | Light theme */
+  /* Switch - Light theme */
   --bgToggle: hsl(230, 22%, 74%);
 
-  /* Neutral colors | Light theme */
-  --bgTheme: hsl(0, 0%, 100%);
-  --bgTopPatternTheme: hsl(225, 100%, 98%);
-  --bgCardTheme: hsl(227, 47%, 96%);
+  /* Neutral colors - Light theme */
+  --bgColor: hsl(0, 0%, 100%);
+  --topPatternBg: hsl(225, 100%, 98%);
+  --cardBg: hsl(227, 47%, 96%);
   --textPrimary: hsl(230, 17%, 14%);
   --textSecondary: hsl(228, 12%, 44%);
 }
@@ -29,9 +29,9 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: var(--textPrimary);
-  background-color: var(--bgTheme);
+  background-color: var(--bgColor);
   -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: var(--bgTheme);
+  -webkit-tap-highlight-color: var(--bgColor);
 }
 
 h1,
@@ -57,7 +57,7 @@ h6 {
 
 /* Header */
 .header {
-  background: var(--bgTopPatternTheme);
+  background: var(--topPatternBg);
   padding-bottom: 100px;
   border-radius: 0 0 20px 20px;
   padding-top: 3em;
@@ -103,7 +103,7 @@ h6 {
 .dark-mode__switch::before {
   content: '';
   display: block;
-  background: var(--bgTheme);
+  background: var(--bgColor);
   height: 20px;
   width: 20px;
   border-radius: 50%;
@@ -112,7 +112,7 @@ h6 {
   will-change: transform;
 }
 
-/* Section followers */
+/* Secction followers */
 .section-followers {
   margin-top: -50px;
   line-height: 1.2;
@@ -121,7 +121,7 @@ h6 {
 
 /* Card */
 .card {
-  background: var(--bgCardTheme);
+  background: var(--cardBg);
   border-radius: 0.5em;
   overflow: hidden;
   text-align: center;
@@ -185,6 +185,9 @@ h6 {
 .card-today img {
   margin-right: 0.3em;
 }
+.card-today.is-danger {
+  color: var(--brightRed);
+}
 
 /* Overview today */
 .section-overview {
@@ -197,8 +200,7 @@ h6 {
 }
 
 .card-small {
-  /* border: 1px solid red; */
-  background: var(--bgCardTheme);
+  background: var(--cardBg);
   border-radius: 0.5em;
   padding: 2em;
   display: grid;
@@ -275,17 +277,17 @@ h6 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Switch | Dark theme */
+    /* Switch - Dark theme */
     --bgToggle: linear-gradient(
       to right,
       hsl(210, 78%, 56%) 0%,
       hsl(146, 68%, 55%) 100%
     );
 
-    /* Neutral colors | Dark theme */
-    --bgTheme: hsl(230, 17%, 14%);
-    --bgTopPatternTheme: hsl(232, 19%, 15%);
-    --bgCardTheme: hsl(228, 28%, 20%);
+    /* Neutral colors - Dark theme */
+    --bgColor: hsl(230, 17%, 14%);
+    --topPatternBg: hsl(232, 19%, 15%);
+    --cardBg: hsl(228, 28%, 20%);
     --textPrimary: hsl(0, 0%, 100%);
     --textSecondary: hsl(228, 34%, 66%);
   }
