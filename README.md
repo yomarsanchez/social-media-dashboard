@@ -16,7 +16,7 @@ Demo https://yomarsanchez.github.io/social-media-dashboard
 
 ### Resultado esperado
 
-<a href="./images/dark-mode.png">
+<a href="./images/dark-mode.png" target="_black">
   <img src="./images/dark-mode.png" width="100%">
 </a>
 

@@ -112,8 +112,8 @@ h6 {
   will-change: transform;
 }
 
-/* Secction followers */
-.section-followers {
+/* Section social media cards */
+.social-media-cards {
   margin-top: -50px;
   line-height: 1.2;
   margin-bottom: 3em;
@@ -189,17 +189,17 @@ h6 {
   color: var(--brightRed);
 }
 
-/* Overview today */
-.section-overview {
+/* Overview today cards */
+.overview-today-cards {
   margin-bottom: 2em;
 }
 
-.section-overview__title {
+.overview-today-cards__title {
   color: var(--textSecondary);
   margin-bottom: 1em;
 }
 
-.card-small {
+.card-view {
   background: var(--cardBg);
   border-radius: 0.5em;
   padding: 2em;
@@ -207,21 +207,21 @@ h6 {
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1.2em;
 }
-.card-small p {
+.card-view p {
   margin: 0;
   font-weight: 700;
   line-height: 0.9;
 }
-.card-small__description {
+.card-view__description {
   color: var(--textSecondary);
 }
-.card-small__icon {
+.card-view__icon {
   text-align: right;
 }
-.card-small__total {
+.card-view__total {
   font-size: 2.5em;
 }
-.card-small__percentage {
+.card-view__percentage {
   color: var(--limeGreen);
   font-size: 0.9em;
   text-align: right;
@@ -229,19 +229,19 @@ h6 {
   align-items: flex-end;
   justify-content: flex-end;
 }
-.card-small__percentage span {
+.card-view__percentage span {
   display: flex;
   align-items: center;
 }
-.card-small__percentage img {
+.card-view__percentage img {
   margin-right: 0.3em;
 }
 
-.card-small__percentage.is-danger {
+.card-view__percentage.is-danger {
   color: var(--brightRed);
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 560px) {
   .wrapper {
     max-width: 1440px;
     margin: auto;
